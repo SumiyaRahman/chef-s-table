@@ -2,7 +2,7 @@ import chefhat from '../assets/Images/chef-hat.png'
 
 const Header = () => {
   return (
-    <section className="flex flex-col lg:flex-row md:justify-between items-center my-8 space-y-4">
+    <section className="container mx-auto px-5 flex flex-col lg:flex-row md:justify-between items-center my-8 space-y-4">
       {/* Logo */}
       <h1 className="text-gray-800 font-bold text-3xl flex items-center gap-2">
         <img src={chefhat}/>
