@@ -1,8 +1,13 @@
+import chefhat from '../assets/Images/chef-hat.png'
+
 const Header = () => {
   return (
     <section className="flex flex-col lg:flex-row md:justify-between items-center my-8 space-y-4">
       {/* Logo */}
-      <h1 className="text-gray-800 font-bold text-3xl">Chef&apos;s Table</h1>
+      <h1 className="text-gray-800 font-bold text-3xl flex items-center gap-2">
+        <img src={chefhat}/>
+        <span>Chef&apos;s Table</span>
+      </h1>
       {/* menu start */}
       <ul className="flex gap-6 text-gray-600 font-semibold text-base">
         <li>
@@ -35,7 +40,7 @@ const Header = () => {
         {/* search end */}
 
         <div className="bg-green-400 flex items-center justify-center rounded-full w-12 h-12">
-            <i className="fa-regular fa-user-circle text-gray-700 text-3xl"></i>
+          <i className="fa-regular fa-user-circle text-gray-700 text-3xl"></i>
         </div>
       </div>
     </section>
